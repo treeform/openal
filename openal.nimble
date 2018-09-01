@@ -2,7 +2,7 @@
 
 version       = "0.1.0"
 author        = "treeform"
-description   = "an OpenAL wrapper"
+description   = "An OpenAL wrapper for nim."
 license       = "MIT"
 srcDir        = "src"
 

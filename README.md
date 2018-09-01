@@ -19,20 +19,20 @@ Small example on how to use this nim library:
 
 ```nim
 
-import openal, streams, os, readwav
+import openal, os, readwav
 
 var
   # sound by DANMITCH3LL: https://freesound.org/people/DANMITCH3LL/sounds/232009/
   wav = readWav("xylophone-sweep.wav") # read wav file using simple helper utility
   buffer = ALuint(0) # buffer is like a record of a sound
-  source = ALuint(0) # source is like a recprd player, it can play 1 buffer at a time
+  source = ALuint(0) # source is like a record player, it can play 1 buffer at a time
 
 # open setup and error handling
 let device = alcOpenDevice(nil)
-if device == nil: quit "failed to get default device"
+if device == nil: quit "OpenAL: failed to get default device"
 let ctx = device.alcCreateContext(nil)
-if ctx == nil: quit "failed to create context"
-if not alcMakeContextCurrent(ctx): quit "failed to make current"
+if ctx == nil: quit "OpenAL: failed to create context"
+if not alcMakeContextCurrent(ctx): quit "OpenAL: failed to make context current"
 
 # setup buffer
 alGenBuffers(ALsizei 1, addr buffer)
@@ -50,6 +50,6 @@ sleep(2500)
 alDeleteSources(1, addr source)
 alDeleteBuffers(1, addr buffer)
 alcDestroyContext(ctx)
-if not alcCloseDevice(device): quit "failed to close device"
+if not alcCloseDevice(device): quit "OpenAL: failed to close device"
 
 ```
