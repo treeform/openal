@@ -4,7 +4,7 @@
 
 An OpenAL wrapper for nim. OpenAL is a cross platform way to play sounds.
 
-It works on:
+OpenAL works on:
 * Windows
 * macOS
 * Linux

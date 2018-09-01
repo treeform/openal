@@ -2,7 +2,7 @@ import openal, os, readwav
 
 var
   # sound by DANMITCH3LL: https://freesound.org/people/DANMITCH3LL/sounds/232009/
-  wav = readWav("xylophone-sweep.wav") # read wav file using simple helper utility
+  wav = readWav("tests/xylophone-sweep.wav") # read wav file using simple helper utility
   buffer = ALuint(0) # buffer is like a record of a sound
   source = ALuint(0) # source is like a record player, it can play 1 buffer at a time
 
