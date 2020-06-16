@@ -161,7 +161,7 @@ const
   AL_PROCESSED* = 0x00002012
 
   # Errors: No Error.
-  AL_NO_ERROR* = false
+  AL_NO_ERROR* = 0x00000000
 
   # Invalid Name paramater passed to AL call.
   AL_INVALID_NAME* = 0x0000A001
@@ -396,4 +396,3 @@ proc alDistanceModel*(distanceModel: ALenum)
 {.pop.}
 
 include openal/alc
-
