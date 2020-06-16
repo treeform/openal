@@ -92,7 +92,7 @@ proc alcGetCurrentContext*(): ALCcontext
 proc alcGetContextsDevice*(context: ALCcontext): ALCdevice
 
 # Device Management
-proc alcOpenDevice*(devicename: ptr ALCchar): ALCdevice
+proc alcOpenDevice*(devicename: cstring): ALCdevice
 proc alcCloseDevice*(device: ALCdevice): bool
 
 # Error support.
@@ -103,16 +103,16 @@ proc alcGetError*(device: ALCdevice): ALCenum
 # Extension support.
 # Query for the presence of an extension, and obtain any appropriate
 # function pointers and enum values.
-proc alcIsExtensionPresent*(device: ALCdevice; extname: ptr ALCchar): bool
-proc alcGetProcAddress*(device: ALCdevice; funcname: ptr ALCchar): pointer
-proc alcGetEnumValue*(device: ALCdevice; enumname: ptr ALCchar): ALCenum
+proc alcIsExtensionPresent*(device: ALCdevice; extname: cstring): bool
+proc alcGetProcAddress*(device: ALCdevice; funcname: cstring): pointer
+proc alcGetEnumValue*(device: ALCdevice; enumname: cstring): ALCenum
 
 # Query functions
-proc alcGetString*(device: ALCdevice; param: ALCenum): ptr ALCchar
+proc alcGetString*(device: ALCdevice; param: ALCenum): cstring
 proc alcGetIntegerv*(device: ALCdevice; param: ALCenum; size: ALCsizei; data: ptr ALCint)
 
 # Capture functions
-proc alcCaptureOpenDevice*(devicename: ptr ALCchar; frequency: ALCuint; format: ALCenum; buffersize: ALCsizei): ALCdevice
+proc alcCaptureOpenDevice*(devicename: cstring; frequency: ALCuint; format: ALCenum; buffersize: ALCsizei): ALCdevice
 proc alcCaptureCloseDevice*(device: ALCdevice): bool
 proc alcCaptureStart*(device: ALCdevice)
 proc alcCaptureStop*(device: ALCdevice)

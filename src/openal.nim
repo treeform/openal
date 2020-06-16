@@ -218,7 +218,7 @@ proc alDisable*(capability: ALenum)
 proc alIsEnabled*(capability: ALenum): bool
 
 # State retrieval
-proc alGetString*(param: ALenum): ptr char
+proc alGetString*(param: ALenum): cstring
 proc alGetBooleanv*(param: ALenum; data: ptr bool)
 proc alGetIntegerv*(param: ALenum; data: ptr ALint)
 proc alGetFloatv*(param: ALenum; data: ptr ALfloat)
@@ -235,9 +235,9 @@ proc alGetError*(): ALenum
 # Extension support.
 # Query for the presence of an extension, and obtain any appropriate
 # function pointers and enum values.
-proc alIsExtensionPresent*(extname: ptr char): bool
-proc alGetProcAddress*(fname: ptr char): pointer
-proc alGetEnumValue*(ename: ptr char): ALenum
+proc alIsExtensionPresent*(extname: cstring): bool
+proc alGetProcAddress*(fname: cstring): pointer
+proc alGetEnumValue*(ename: cstring): ALenum
 
 # LISTENER
 # Listener represents the location and orientation of the
