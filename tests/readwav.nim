@@ -6,7 +6,6 @@ type WavFile* = object
   freq*: int
   channels*: int
 
-
 proc readWav*(
   path: string,
   ): WavFile =

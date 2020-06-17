@@ -15,7 +15,8 @@ if not alcMakeContextCurrent(ctx): quit "OpenAL: failed to make context current"
 
 # setup buffer
 alGenBuffers(ALsizei 1, addr buffer)
-alBufferData(buffer, AL_FORMAT_MONO16, wav.data, ALsizei wav.size, ALsizei wav.freq)
+alBufferData(buffer, AL_FORMAT_MONO16, wav.data, ALsizei wav.size,
+    ALsizei wav.freq)
 
 # setup source
 alGenSources(ALsizei 1, addr source)

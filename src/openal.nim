@@ -108,7 +108,8 @@ const
 
   # Source type (Static, Streaming or undetermined)
   # Source is Static if a Buffer has been attached using AL_BUFFER
-  # Source is Streaming if one or more Buffers have been attached using alSourceQueueBuffers
+  # Source is Streaming if one or more Buffers have been attached using
+  # alSourceQueueBuffers
   # Source is undetermined when it has the NULL buffer attached
   AL_SOURCE_TYPE* = 0x00001027
   AL_STATIC* = 0x00001028
@@ -219,10 +220,10 @@ proc alIsEnabled*(capability: ALenum): bool
 
 # State retrieval
 proc alGetString*(param: ALenum): cstring
-proc alGetBooleanv*(param: ALenum; data: ptr bool)
-proc alGetIntegerv*(param: ALenum; data: ptr ALint)
-proc alGetFloatv*(param: ALenum; data: ptr ALfloat)
-proc alGetDoublev*(param: ALenum; data: ptr ALdouble)
+proc alGetBooleanv*(param: ALenum, data: ptr bool)
+proc alGetIntegerv*(param: ALenum, data: ptr ALint)
+proc alGetFloatv*(param: ALenum, data: ptr ALfloat)
+proc alGetDoublev*(param: ALenum, data: ptr ALdouble)
 proc alGetBoolean*(param: ALenum): bool
 proc alGetInteger*(param: ALenum): ALint
 proc alGetFloat*(param: ALenum): ALfloat
@@ -249,20 +250,23 @@ proc alGetEnumValue*(ename: cstring): ALenum
 # Orientation  AL_ORIENTATION  ALfloat[6] (Forward then Up vectors)
 
 # Set Listener parameters
-proc alListenerf*(param: ALenum; value: ALfloat)
-proc alListener3f*(param: ALenum; value1: ALfloat; value2: ALfloat; value3: ALfloat)
-proc alListenerfv*(param: ALenum; values: ptr ALfloat)
-proc alListeneri*(param: ALenum; value: ALint)
-proc alListener3i*(param: ALenum; value1: ALint; value2: ALint; value3: ALint)
-proc alListeneriv*(param: ALenum; values: ptr ALint)
+proc alListenerf*(param: ALenum, value: ALfloat)
+proc alListener3f*(param: ALenum, value1: ALfloat, value2: ALfloat,
+  value3: ALfloat)
+proc alListenerfv*(param: ALenum, values: ptr ALfloat)
+proc alListeneri*(param: ALenum, value: ALint)
+proc alListener3i*(param: ALenum, value1: ALint, value2: ALint, value3: ALint)
+proc alListeneriv*(param: ALenum, values: ptr ALint)
 
 # Get Listener parameters
-proc alGetListenerf*(param: ALenum; value: ptr ALfloat)
-proc alGetListener3f*(param: ALenum; value1: ptr ALfloat; value2: ptr ALfloat; value3: ptr ALfloat)
-proc alGetListenerfv*(param: ALenum; values: ptr ALfloat)
-proc alGetListeneri*(param: ALenum; value: ptr ALint)
-proc alGetListener3i*(param: ALenum; value1: ptr ALint; value2: ptr ALint; value3: ptr ALint)
-proc alGetListeneriv*(param: ALenum; values: ptr ALint)
+proc alGetListenerf*(param: ALenum, value: ptr ALfloat)
+proc alGetListener3f*(param: ALenum, value1: ptr ALfloat, value2: ptr ALfloat,
+  value3: ptr ALfloat)
+proc alGetListenerfv*(param: ALenum, values: ptr ALfloat)
+proc alGetListeneri*(param: ALenum, value: ptr ALint)
+proc alGetListener3i*(param: ALenum, value1: ptr ALint, value2: ptr ALint,
+  value3: ptr ALint)
+proc alGetListeneriv*(param: ALenum, values: ptr ALint)
 
 # SOURCE
 # Sources represent individual sound objects in 3D-space.
@@ -294,42 +298,46 @@ proc alGetListeneriv*(param: ALenum; values: ptr ALint)
 # Buffers Processed (Query only)    AL_BUFFERS_PROCESSED    ALint
 
 # Create Source objects
-proc alGenSources*(n: ALsizei; sources: ptr ALuint)
+proc alGenSources*(n: ALsizei, sources: ptr ALuint)
 
 # Delete Source objects
-proc alDeleteSources*(n: ALsizei; sources: ptr ALuint)
+proc alDeleteSources*(n: ALsizei, sources: ptr ALuint)
 
 # Verify a handle is a valid Source
 proc alIsSource*(sid: ALuint): bool
 
 # Set Source parameters
-proc alSourcef*(sid: ALuint; param: ALenum; value: ALfloat)
-proc alSource3f*(sid: ALuint; param: ALenum; value1: ALfloat; value2: ALfloat; value3: ALfloat)
-proc alSourcefv*(sid: ALuint; param: ALenum; values: ptr ALfloat)
-proc alSourcei*(sid: ALuint; param: ALenum; value: ALint)
-proc alSource3i*(sid: ALuint; param: ALenum; value1: ALint; value2: ALint; value3: ALint)
-proc alSourceiv*(sid: ALuint; param: ALenum; values: ptr ALint)
+proc alSourcef*(sid: ALuint, param: ALenum, value: ALfloat)
+proc alSource3f*(sid: ALuint, param: ALenum, value1: ALfloat, value2: ALfloat,
+  value3: ALfloat)
+proc alSourcefv*(sid: ALuint, param: ALenum, values: ptr ALfloat)
+proc alSourcei*(sid: ALuint, param: ALenum, value: ALint)
+proc alSource3i*(sid: ALuint, param: ALenum, value1: ALint, value2: ALint,
+  value3: ALint)
+proc alSourceiv*(sid: ALuint, param: ALenum, values: ptr ALint)
 
 # Get Source parameters
-proc alGetSourcef*(sid: ALuint; param: ALenum; value: ptr ALfloat)
-proc alGetSource3f*(sid: ALuint; param: ALenum; value1: ptr ALfloat; value2: ptr ALfloat; value3: ptr ALfloat)
-proc alGetSourcefv*(sid: ALuint; param: ALenum; values: ptr ALfloat)
-proc alGetSourcei*(sid: ALuint; param: ALenum; value: ptr ALint)
-proc alGetSource3i*(sid: ALuint; param: ALenum; value1: ptr ALint; value2: ptr ALint; value3: ptr ALint)
-proc alGetSourceiv*(sid: ALuint; param: ALenum; values: ptr ALint)
+proc alGetSourcef*(sid: ALuint, param: ALenum, value: ptr ALfloat)
+proc alGetSource3f*(sid: ALuint, param: ALenum, value1: ptr ALfloat,
+  value2: ptr ALfloat, value3: ptr ALfloat)
+proc alGetSourcefv*(sid: ALuint, param: ALenum, values: ptr ALfloat)
+proc alGetSourcei*(sid: ALuint, param: ALenum, value: ptr ALint)
+proc alGetSource3i*(sid: ALuint, param: ALenum, value1: ptr ALint,
+  value2: ptr ALint, value3: ptr ALint)
+proc alGetSourceiv*(sid: ALuint, param: ALenum, values: ptr ALint)
 
 # Source vector based playback calls
 # Play, replay, or resume (if paused) a list of Sources
-proc alSourcePlayv*(ns: ALsizei; sids: ptr ALuint)
+proc alSourcePlayv*(ns: ALsizei, sids: ptr ALuint)
 
 # Stop a list of Sources
-proc alSourceStopv*(ns: ALsizei; sids: ptr ALuint)
+proc alSourceStopv*(ns: ALsizei, sids: ptr ALuint)
 
 # Rewind a list of Sources
-proc alSourceRewindv*(ns: ALsizei; sids: ptr ALuint)
+proc alSourceRewindv*(ns: ALsizei, sids: ptr ALuint)
 
 # Pause a list of Sources
-proc alSourcePausev*(ns: ALsizei; sids: ptr ALuint)
+proc alSourcePausev*(ns: ALsizei, sids: ptr ALuint)
 
 # Source based playback calls
 # Play, replay, or resume a Source
@@ -345,8 +353,8 @@ proc alSourceRewind*(sid: ALuint)
 proc alSourcePause*(sid: ALuint)
 
 # Source Queuing
-proc alSourceQueueBuffers*(sid: ALuint; numEntries: ALsizei; bids: ptr ALuint)
-proc alSourceUnqueueBuffers*(sid: ALuint; numEntries: ALsizei; bids: ptr ALuint)
+proc alSourceQueueBuffers*(sid: ALuint, numEntries: ALsizei, bids: ptr ALuint)
+proc alSourceUnqueueBuffers*(sid: ALuint, numEntries: ALsizei, bids: ptr ALuint)
 
 # BUFFER
 # Buffer objects are storage space for sample data.
@@ -359,32 +367,37 @@ proc alSourceUnqueueBuffers*(sid: ALuint; numEntries: ALsizei; bids: ptr ALuint)
 # Channels (Query only)     AL_CHANNELS       ALint
 
 # Create Buffer objects
-proc alGenBuffers*(n: ALsizei; buffers: ptr ALuint)
+proc alGenBuffers*(n: ALsizei, buffers: ptr ALuint)
 
 # Delete Buffer objects
-proc alDeleteBuffers*(n: ALsizei; buffers: ptr ALuint)
+proc alDeleteBuffers*(n: ALsizei, buffers: ptr ALuint)
 
 # Verify a handle is a valid Buffer
 proc alIsBuffer*(bid: ALuint): bool
 
 # Specify the data to be copied into a buffer
-proc alBufferData*(bid: ALuint; format: ALenum; data: pointer; size: ALsizei; freq: ALsizei)
+proc alBufferData*(bid: ALuint, format: ALenum, data: pointer, size: ALsizei,
+  freq: ALsizei)
 
 # Set Buffer parameters
-proc alBufferf*(bid: ALuint; param: ALenum; value: ALfloat)
-proc alBuffer3f*(bid: ALuint; param: ALenum; value1: ALfloat; value2: ALfloat; value3: ALfloat)
-proc alBufferfv*(bid: ALuint; param: ALenum; values: ptr ALfloat)
-proc alBufferi*(bid: ALuint; param: ALenum; value: ALint)
-proc alBuffer3i*(bid: ALuint; param: ALenum; value1: ALint; value2: ALint; value3: ALint)
-proc alBufferiv*(bid: ALuint; param: ALenum; values: ptr ALint)
+proc alBufferf*(bid: ALuint, param: ALenum, value: ALfloat)
+proc alBuffer3f*(bid: ALuint, param: ALenum, value1: ALfloat, value2: ALfloat,
+  value3: ALfloat)
+proc alBufferfv*(bid: ALuint, param: ALenum, values: ptr ALfloat)
+proc alBufferi*(bid: ALuint, param: ALenum, value: ALint)
+proc alBuffer3i*(bid: ALuint, param: ALenum, value1: ALint, value2: ALint,
+  value3: ALint)
+proc alBufferiv*(bid: ALuint, param: ALenum, values: ptr ALint)
 
 # Get Buffer parameters
-proc alGetBufferf*(bid: ALuint; param: ALenum; value: ptr ALfloat)
-proc alGetBuffer3f*(bid: ALuint; param: ALenum; value1: ptr ALfloat; value2: ptr ALfloat; value3: ptr ALfloat)
-proc alGetBufferfv*(bid: ALuint; param: ALenum; values: ptr ALfloat)
-proc alGetBufferi*(bid: ALuint; param: ALenum; value: ptr ALint)
-proc alGetBuffer3i*(bid: ALuint; param: ALenum; value1: ptr ALint; value2: ptr ALint; value3: ptr ALint)
-proc alGetBufferiv*(bid: ALuint; param: ALenum; values: ptr ALint)
+proc alGetBufferf*(bid: ALuint, param: ALenum, value: ptr ALfloat)
+proc alGetBuffer3f*(bid: ALuint, param: ALenum, value1: ptr ALfloat,
+  value2: ptr ALfloat, value3: ptr ALfloat)
+proc alGetBufferfv*(bid: ALuint, param: ALenum, values: ptr ALfloat)
+proc alGetBufferi*(bid: ALuint, param: ALenum, value: ptr ALint)
+proc alGetBuffer3i*(bid: ALuint, param: ALenum, value1: ptr ALint,
+  value2: ptr ALint, value3: ptr ALint)
+proc alGetBufferiv*(bid: ALuint, param: ALenum, values: ptr ALint)
 
 # Global Parameters
 proc alDopplerFactor*(value: ALfloat)
