@@ -2,6 +2,16 @@
 
 ![OpenAL Logo](https://upload.wikimedia.org/wikipedia/en/thumb/2/28/OpenAL_logo.png/200px-OpenAL_logo.png)
 
+`nimble install openal`
+
+![Github Actions](https://github.com/treeform/openal/workflows/Github%20Actions/badge.svg)
+
+[API reference](https://nimdocs.com/treeform/openal)
+
+This library has no dependencies other than the Nim standard libarary.
+
+## About
+
 An OpenAL wrapper for nim. OpenAL is a cross platform way to play sounds.
 
 OpenAL works on:
@@ -1489,4 +1499,3 @@ proc alcCaptureStop(device: ALCdevice) {.cdecl, importc.}
 ```nim
 proc alcCaptureSamples(device: ALCdevice; buffer: pointer; samples: ALCsizei) {.cdecl, importc.}
 ```
-
