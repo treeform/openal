@@ -11,7 +11,8 @@ when defined(linux):
   {.passL: "-lopenal"}
   {.push importc.}
 elif defined(windows):
-  {.push cdecl, dynlib: "OpenAL32.dll", importc.}
+  #{.push cdecl, dynlib: "OpenAL32.dll", importc.}
+  {.push cdecl, dynlib: "soft_oal.dll", importc.}
 else:
   when defined(macosx) or defined(ios):
     {.passL: "-framework OpenAL".}

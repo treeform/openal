@@ -1,5 +1,5 @@
 when defined(windows):
-  {.push cdecl, dynlib: "OpenAL32.dll", importc.}
+  {.push cdecl, dynlib: "soft_oal.dll", importc.}
 else:
   {.push importc.}
 
@@ -69,6 +69,7 @@ const
   ALC_OUT_OF_MEMORY* = 0x0000A005
 
   # The Specifier string for default device
+  ALC_ALL_DEVICES_SPECIFIER* = 0x00001013
   ALC_DEFAULT_DEVICE_SPECIFIER* = 0x00001004
   ALC_DEVICE_SPECIFIER* = 0x00001005
   ALC_EXTENSIONS* = 0x00001006

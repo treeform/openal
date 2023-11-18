@@ -6,7 +6,7 @@
 
 ![Github Actions](https://github.com/treeform/openal/workflows/Github%20Actions/badge.svg)
 
-[API reference](https://nimdocs.com/treeform/openal)
+[API reference](https://treeform.github.io/openal)
 
 This library has no dependencies other than the Nim standard library.
 
