@@ -1,0 +1,205 @@
+nimTitle	openal	openal.html	module src/openal		0
+nim	ALuint	openal.html#ALuint	type ALuint		3
+nim	ALint	openal.html#ALint	type ALint		4
+nim	ALsizei	openal.html#ALsizei	type ALsizei		5
+nim	ALenum	openal.html#ALenum	type ALenum		6
+nim	ALfloat	openal.html#ALfloat	type ALfloat		7
+nim	ALdouble	openal.html#ALdouble	type ALdouble		8
+nim	AL_SOURCE_RELATIVE	openal.html#AL_SOURCE_RELATIVE	const AL_SOURCE_RELATIVE		23
+nim	AL_CONE_INNER_ANGLE	openal.html#AL_CONE_INNER_ANGLE	const AL_CONE_INNER_ANGLE		28
+nim	AL_CONE_OUTER_ANGLE	openal.html#AL_CONE_OUTER_ANGLE	const AL_CONE_OUTER_ANGLE		33
+nim	AL_PITCH	openal.html#AL_PITCH	const AL_PITCH		38
+nim	AL_POSITION	openal.html#AL_POSITION	const AL_POSITION		48
+nim	AL_DIRECTION	openal.html#AL_DIRECTION	const AL_DIRECTION		51
+nim	AL_VELOCITY	openal.html#AL_VELOCITY	const AL_VELOCITY		54
+nim	AL_LOOPING	openal.html#AL_LOOPING	const AL_LOOPING		60
+nim	AL_BUFFER	openal.html#AL_BUFFER	const AL_BUFFER		65
+nim	AL_GAIN	openal.html#AL_GAIN	const AL_GAIN		76
+nim	AL_MIN_GAIN	openal.html#AL_MIN_GAIN	const AL_MIN_GAIN		82
+nim	AL_MAX_GAIN	openal.html#AL_MAX_GAIN	const AL_MAX_GAIN		88
+nim	AL_ORIENTATION	openal.html#AL_ORIENTATION	const AL_ORIENTATION		92
+nim	AL_SOURCE_STATE	openal.html#AL_SOURCE_STATE	const AL_SOURCE_STATE		95
+nim	AL_INITIAL	openal.html#AL_INITIAL	const AL_INITIAL		96
+nim	AL_PLAYING	openal.html#AL_PLAYING	const AL_PLAYING		97
+nim	AL_PAUSED	openal.html#AL_PAUSED	const AL_PAUSED		98
+nim	AL_STOPPED	openal.html#AL_STOPPED	const AL_STOPPED		99
+nim	AL_BUFFERS_QUEUED	openal.html#AL_BUFFERS_QUEUED	const AL_BUFFERS_QUEUED		102
+nim	AL_BUFFERS_PROCESSED	openal.html#AL_BUFFERS_PROCESSED	const AL_BUFFERS_PROCESSED		103
+nim	AL_SEC_OFFSET	openal.html#AL_SEC_OFFSET	const AL_SEC_OFFSET		106
+nim	AL_SAMPLE_OFFSET	openal.html#AL_SAMPLE_OFFSET	const AL_SAMPLE_OFFSET		107
+nim	AL_BYTE_OFFSET	openal.html#AL_BYTE_OFFSET	const AL_BYTE_OFFSET		108
+nim	AL_SOURCE_TYPE	openal.html#AL_SOURCE_TYPE	const AL_SOURCE_TYPE		115
+nim	AL_STATIC	openal.html#AL_STATIC	const AL_STATIC		116
+nim	AL_STREAMING	openal.html#AL_STREAMING	const AL_STREAMING		117
+nim	AL_UNDETERMINED	openal.html#AL_UNDETERMINED	const AL_UNDETERMINED		118
+nim	AL_FORMAT_MONO8	openal.html#AL_FORMAT_MONO8	const AL_FORMAT_MONO8		121
+nim	AL_FORMAT_MONO16	openal.html#AL_FORMAT_MONO16	const AL_FORMAT_MONO16		122
+nim	AL_FORMAT_STEREO8	openal.html#AL_FORMAT_STEREO8	const AL_FORMAT_STEREO8		123
+nim	AL_FORMAT_STEREO16	openal.html#AL_FORMAT_STEREO16	const AL_FORMAT_STEREO16		124
+nim	AL_REFERENCE_DISTANCE	openal.html#AL_REFERENCE_DISTANCE	const AL_REFERENCE_DISTANCE		130
+nim	AL_ROLLOFF_FACTOR	openal.html#AL_ROLLOFF_FACTOR	const AL_ROLLOFF_FACTOR		135
+nim	AL_CONE_OUTER_GAIN	openal.html#AL_CONE_OUTER_GAIN	const AL_CONE_OUTER_GAIN		141
+nim	AL_MAX_DISTANCE	openal.html#AL_MAX_DISTANCE	const AL_MAX_DISTANCE		148
+nim	AL_FREQUENCY	openal.html#AL_FREQUENCY	const AL_FREQUENCY		154
+nim	AL_BITS	openal.html#AL_BITS	const AL_BITS		155
+nim	AL_CHANNELS	openal.html#AL_CHANNELS	const AL_CHANNELS		156
+nim	AL_SIZE	openal.html#AL_SIZE	const AL_SIZE		157
+nim	AL_UNUSED	openal.html#AL_UNUSED	const AL_UNUSED		161
+nim	AL_PENDING	openal.html#AL_PENDING	const AL_PENDING		162
+nim	AL_PROCESSED	openal.html#AL_PROCESSED	const AL_PROCESSED		163
+nim	AL_NO_ERROR	openal.html#AL_NO_ERROR	const AL_NO_ERROR		166
+nim	AL_INVALID_NAME	openal.html#AL_INVALID_NAME	const AL_INVALID_NAME		169
+nim	AL_INVALID_ENUM	openal.html#AL_INVALID_ENUM	const AL_INVALID_ENUM		172
+nim	AL_INVALID_VALUE	openal.html#AL_INVALID_VALUE	const AL_INVALID_VALUE		175
+nim	AL_INVALID_OPERATION	openal.html#AL_INVALID_OPERATION	const AL_INVALID_OPERATION		178
+nim	AL_OUT_OF_MEMORY	openal.html#AL_OUT_OF_MEMORY	const AL_OUT_OF_MEMORY		181
+nim	AL_VENDOR	openal.html#AL_VENDOR	const AL_VENDOR		184
+nim	AL_VERSION	openal.html#AL_VERSION	const AL_VERSION		185
+nim	AL_RENDERER	openal.html#AL_RENDERER	const AL_RENDERER		186
+nim	AL_EXTENSIONS	openal.html#AL_EXTENSIONS	const AL_EXTENSIONS		187
+nim	AL_DOPPLER_FACTOR	openal.html#AL_DOPPLER_FACTOR	const AL_DOPPLER_FACTOR		192
+nim	AL_DOPPLER_VELOCITY	openal.html#AL_DOPPLER_VELOCITY	const AL_DOPPLER_VELOCITY		195
+nim	AL_SPEED_OF_SOUND	openal.html#AL_SPEED_OF_SOUND	const AL_SPEED_OF_SOUND		198
+nim	AL_DISTANCE_MODEL	openal.html#AL_DISTANCE_MODEL	const AL_DISTANCE_MODEL		203
+nim	AL_INVERSE_DISTANCE	openal.html#AL_INVERSE_DISTANCE	const AL_INVERSE_DISTANCE		204
+nim	AL_INVERSE_DISTANCE_CLAMPED	openal.html#AL_INVERSE_DISTANCE_CLAMPED	const AL_INVERSE_DISTANCE_CLAMPED		205
+nim	AL_LINEAR_DISTANCE	openal.html#AL_LINEAR_DISTANCE	const AL_LINEAR_DISTANCE		206
+nim	AL_LINEAR_DISTANCE_CLAMPED	openal.html#AL_LINEAR_DISTANCE_CLAMPED	const AL_LINEAR_DISTANCE_CLAMPED		207
+nim	AL_EXPONENT_DISTANCE	openal.html#AL_EXPONENT_DISTANCE	const AL_EXPONENT_DISTANCE		208
+nim	AL_EXPONENT_DISTANCE_CLAMPED	openal.html#AL_EXPONENT_DISTANCE_CLAMPED	const AL_EXPONENT_DISTANCE_CLAMPED		209
+nim	AL_PRIORITY	openal.html#AL_PRIORITY	const AL_PRIORITY		214
+nim	AL_PRIORITY_SLOTS	openal.html#AL_PRIORITY_SLOTS	const AL_PRIORITY_SLOTS		215
+nim	alEnable	openal.html#alEnable,ALenum	proc alEnable(capability: ALenum)		218
+nim	alDisable	openal.html#alDisable,ALenum	proc alDisable(capability: ALenum)		219
+nim	alIsEnabled	openal.html#alIsEnabled,ALenum	proc alIsEnabled(capability: ALenum): bool		220
+nim	alGetString	openal.html#alGetString,ALenum	proc alGetString(param: ALenum): cstring		223
+nim	alGetBooleanv	openal.html#alGetBooleanv,ALenum,ptr.bool	proc alGetBooleanv(param: ALenum; data: ptr bool)		224
+nim	alGetIntegerv	openal.html#alGetIntegerv,ALenum,ptr.ALint	proc alGetIntegerv(param: ALenum; data: ptr ALint)		225
+nim	alGetFloatv	openal.html#alGetFloatv,ALenum,ptr.ALfloat	proc alGetFloatv(param: ALenum; data: ptr ALfloat)		226
+nim	alGetDoublev	openal.html#alGetDoublev,ALenum,ptr.ALdouble	proc alGetDoublev(param: ALenum; data: ptr ALdouble)		227
+nim	alGetBoolean	openal.html#alGetBoolean,ALenum	proc alGetBoolean(param: ALenum): bool		228
+nim	alGetInteger	openal.html#alGetInteger,ALenum	proc alGetInteger(param: ALenum): ALint		229
+nim	alGetFloat	openal.html#alGetFloat,ALenum	proc alGetFloat(param: ALenum): ALfloat		230
+nim	alGetDouble	openal.html#alGetDouble,ALenum	proc alGetDouble(param: ALenum): ALdouble		231
+nim	alGetError	openal.html#alGetError	proc alGetError(): ALenum		235
+nim	alIsExtensionPresent	openal.html#alIsExtensionPresent,cstring	proc alIsExtensionPresent(extname: cstring): bool		240
+nim	alGetProcAddress	openal.html#alGetProcAddress,cstring	proc alGetProcAddress(fname: cstring): pointer		241
+nim	alGetEnumValue	openal.html#alGetEnumValue,cstring	proc alGetEnumValue(ename: cstring): ALenum		242
+nim	alListenerf	openal.html#alListenerf,ALenum,ALfloat	proc alListenerf(param: ALenum; value: ALfloat)		254
+nim	alListener3f	openal.html#alListener3f,ALenum,ALfloat,ALfloat,ALfloat	proc alListener3f(param: ALenum; value1: ALfloat; value2: ALfloat; value3: ALfloat)		255
+nim	alListenerfv	openal.html#alListenerfv,ALenum,ptr.ALfloat	proc alListenerfv(param: ALenum; values: ptr ALfloat)		257
+nim	alListeneri	openal.html#alListeneri,ALenum,ALint	proc alListeneri(param: ALenum; value: ALint)		258
+nim	alListener3i	openal.html#alListener3i,ALenum,ALint,ALint,ALint	proc alListener3i(param: ALenum; value1: ALint; value2: ALint; value3: ALint)		259
+nim	alListeneriv	openal.html#alListeneriv,ALenum,ptr.ALint	proc alListeneriv(param: ALenum; values: ptr ALint)		260
+nim	alGetListenerf	openal.html#alGetListenerf,ALenum,ptr.ALfloat	proc alGetListenerf(param: ALenum; value: ptr ALfloat)		263
+nim	alGetListener3f	openal.html#alGetListener3f,ALenum,ptr.ALfloat,ptr.ALfloat,ptr.ALfloat	proc alGetListener3f(param: ALenum; value1: ptr ALfloat; value2: ptr ALfloat;\n                value3: ptr ALfloat)		264
+nim	alGetListenerfv	openal.html#alGetListenerfv,ALenum,ptr.ALfloat	proc alGetListenerfv(param: ALenum; values: ptr ALfloat)		266
+nim	alGetListeneri	openal.html#alGetListeneri,ALenum,ptr.ALint	proc alGetListeneri(param: ALenum; value: ptr ALint)		267
+nim	alGetListener3i	openal.html#alGetListener3i,ALenum,ptr.ALint,ptr.ALint,ptr.ALint	proc alGetListener3i(param: ALenum; value1: ptr ALint; value2: ptr ALint;\n                value3: ptr ALint)		268
+nim	alGetListeneriv	openal.html#alGetListeneriv,ALenum,ptr.ALint	proc alGetListeneriv(param: ALenum; values: ptr ALint)		270
+nim	alGenSources	openal.html#alGenSources,ALsizei,ptr.ALuint	proc alGenSources(n: ALsizei; sources: ptr ALuint)		302
+nim	alDeleteSources	openal.html#alDeleteSources,ALsizei,ptr.ALuint	proc alDeleteSources(n: ALsizei; sources: ptr ALuint)		305
+nim	alIsSource	openal.html#alIsSource,ALuint	proc alIsSource(sid: ALuint): bool		308
+nim	alSourcef	openal.html#alSourcef,ALuint,ALenum,ALfloat	proc alSourcef(sid: ALuint; param: ALenum; value: ALfloat)		311
+nim	alSource3f	openal.html#alSource3f,ALuint,ALenum,ALfloat,ALfloat,ALfloat	proc alSource3f(sid: ALuint; param: ALenum; value1: ALfloat; value2: ALfloat;\n           value3: ALfloat)		312
+nim	alSourcefv	openal.html#alSourcefv,ALuint,ALenum,ptr.ALfloat	proc alSourcefv(sid: ALuint; param: ALenum; values: ptr ALfloat)		314
+nim	alSourcei	openal.html#alSourcei,ALuint,ALenum,ALint	proc alSourcei(sid: ALuint; param: ALenum; value: ALint)		315
+nim	alSource3i	openal.html#alSource3i,ALuint,ALenum,ALint,ALint,ALint	proc alSource3i(sid: ALuint; param: ALenum; value1: ALint; value2: ALint;\n           value3: ALint)		316
+nim	alSourceiv	openal.html#alSourceiv,ALuint,ALenum,ptr.ALint	proc alSourceiv(sid: ALuint; param: ALenum; values: ptr ALint)		318
+nim	alGetSourcef	openal.html#alGetSourcef,ALuint,ALenum,ptr.ALfloat	proc alGetSourcef(sid: ALuint; param: ALenum; value: ptr ALfloat)		321
+nim	alGetSource3f	openal.html#alGetSource3f,ALuint,ALenum,ptr.ALfloat,ptr.ALfloat,ptr.ALfloat	proc alGetSource3f(sid: ALuint; param: ALenum; value1: ptr ALfloat;\n              value2: ptr ALfloat; value3: ptr ALfloat)		322
+nim	alGetSourcefv	openal.html#alGetSourcefv,ALuint,ALenum,ptr.ALfloat	proc alGetSourcefv(sid: ALuint; param: ALenum; values: ptr ALfloat)		324
+nim	alGetSourcei	openal.html#alGetSourcei,ALuint,ALenum,ptr.ALint	proc alGetSourcei(sid: ALuint; param: ALenum; value: ptr ALint)		325
+nim	alGetSource3i	openal.html#alGetSource3i,ALuint,ALenum,ptr.ALint,ptr.ALint,ptr.ALint	proc alGetSource3i(sid: ALuint; param: ALenum; value1: ptr ALint; value2: ptr ALint;\n              value3: ptr ALint)		326
+nim	alGetSourceiv	openal.html#alGetSourceiv,ALuint,ALenum,ptr.ALint	proc alGetSourceiv(sid: ALuint; param: ALenum; values: ptr ALint)		328
+nim	alSourcePlayv	openal.html#alSourcePlayv,ALsizei,ptr.ALuint	proc alSourcePlayv(ns: ALsizei; sids: ptr ALuint)		332
+nim	alSourceStopv	openal.html#alSourceStopv,ALsizei,ptr.ALuint	proc alSourceStopv(ns: ALsizei; sids: ptr ALuint)		335
+nim	alSourceRewindv	openal.html#alSourceRewindv,ALsizei,ptr.ALuint	proc alSourceRewindv(ns: ALsizei; sids: ptr ALuint)		338
+nim	alSourcePausev	openal.html#alSourcePausev,ALsizei,ptr.ALuint	proc alSourcePausev(ns: ALsizei; sids: ptr ALuint)		341
+nim	alSourcePlay	openal.html#alSourcePlay,ALuint	proc alSourcePlay(sid: ALuint)		345
+nim	alSourceStop	openal.html#alSourceStop,ALuint	proc alSourceStop(sid: ALuint)		348
+nim	alSourceRewind	openal.html#alSourceRewind,ALuint	proc alSourceRewind(sid: ALuint)		351
+nim	alSourcePause	openal.html#alSourcePause,ALuint	proc alSourcePause(sid: ALuint)		354
+nim	alSourceQueueBuffers	openal.html#alSourceQueueBuffers,ALuint,ALsizei,ptr.ALuint	proc alSourceQueueBuffers(sid: ALuint; numEntries: ALsizei; bids: ptr ALuint)		357
+nim	alSourceUnqueueBuffers	openal.html#alSourceUnqueueBuffers,ALuint,ALsizei,ptr.ALuint	proc alSourceUnqueueBuffers(sid: ALuint; numEntries: ALsizei; bids: ptr ALuint)		358
+nim	alGenBuffers	openal.html#alGenBuffers,ALsizei,ptr.ALuint	proc alGenBuffers(n: ALsizei; buffers: ptr ALuint)		371
+nim	alDeleteBuffers	openal.html#alDeleteBuffers,ALsizei,ptr.ALuint	proc alDeleteBuffers(n: ALsizei; buffers: ptr ALuint)		374
+nim	alIsBuffer	openal.html#alIsBuffer,ALuint	proc alIsBuffer(bid: ALuint): bool		377
+nim	alBufferData	openal.html#alBufferData,ALuint,ALenum,pointer,ALsizei,ALsizei	proc alBufferData(bid: ALuint; format: ALenum; data: pointer; size: ALsizei;\n             freq: ALsizei)		380
+nim	alBufferf	openal.html#alBufferf,ALuint,ALenum,ALfloat	proc alBufferf(bid: ALuint; param: ALenum; value: ALfloat)		384
+nim	alBuffer3f	openal.html#alBuffer3f,ALuint,ALenum,ALfloat,ALfloat,ALfloat	proc alBuffer3f(bid: ALuint; param: ALenum; value1: ALfloat; value2: ALfloat;\n           value3: ALfloat)		385
+nim	alBufferfv	openal.html#alBufferfv,ALuint,ALenum,ptr.ALfloat	proc alBufferfv(bid: ALuint; param: ALenum; values: ptr ALfloat)		387
+nim	alBufferi	openal.html#alBufferi,ALuint,ALenum,ALint	proc alBufferi(bid: ALuint; param: ALenum; value: ALint)		388
+nim	alBuffer3i	openal.html#alBuffer3i,ALuint,ALenum,ALint,ALint,ALint	proc alBuffer3i(bid: ALuint; param: ALenum; value1: ALint; value2: ALint;\n           value3: ALint)		389
+nim	alBufferiv	openal.html#alBufferiv,ALuint,ALenum,ptr.ALint	proc alBufferiv(bid: ALuint; param: ALenum; values: ptr ALint)		391
+nim	alGetBufferf	openal.html#alGetBufferf,ALuint,ALenum,ptr.ALfloat	proc alGetBufferf(bid: ALuint; param: ALenum; value: ptr ALfloat)		394
+nim	alGetBuffer3f	openal.html#alGetBuffer3f,ALuint,ALenum,ptr.ALfloat,ptr.ALfloat,ptr.ALfloat	proc alGetBuffer3f(bid: ALuint; param: ALenum; value1: ptr ALfloat;\n              value2: ptr ALfloat; value3: ptr ALfloat)		395
+nim	alGetBufferfv	openal.html#alGetBufferfv,ALuint,ALenum,ptr.ALfloat	proc alGetBufferfv(bid: ALuint; param: ALenum; values: ptr ALfloat)		397
+nim	alGetBufferi	openal.html#alGetBufferi,ALuint,ALenum,ptr.ALint	proc alGetBufferi(bid: ALuint; param: ALenum; value: ptr ALint)		398
+nim	alGetBuffer3i	openal.html#alGetBuffer3i,ALuint,ALenum,ptr.ALint,ptr.ALint,ptr.ALint	proc alGetBuffer3i(bid: ALuint; param: ALenum; value1: ptr ALint; value2: ptr ALint;\n              value3: ptr ALint)		399
+nim	alGetBufferiv	openal.html#alGetBufferiv,ALuint,ALenum,ptr.ALint	proc alGetBufferiv(bid: ALuint; param: ALenum; values: ptr ALint)		401
+nim	alDopplerFactor	openal.html#alDopplerFactor,ALfloat	proc alDopplerFactor(value: ALfloat)		404
+nim	alDopplerVelocity	openal.html#alDopplerVelocity,ALfloat	proc alDopplerVelocity(value: ALfloat)		405
+nim	alSpeedOfSound	openal.html#alSpeedOfSound,ALfloat	proc alSpeedOfSound(value: ALfloat)		406
+nim	alDistanceModel	openal.html#alDistanceModel,ALenum	proc alDistanceModel(distanceModel: ALenum)		407
+nim	ALCAPI	openal.html#ALCAPI	const ALCAPI		7
+nim	ALCAPIENTRY	openal.html#ALCAPIENTRY	const ALCAPIENTRY		8
+nim	ALC_INVALID	openal.html#ALC_INVALID	const ALC_INVALID		9
+nim	ALC_VERSION_0_1	openal.html#ALC_VERSION_0_1	const ALC_VERSION_0_1		10
+nim	ALCchar	openal.html#ALCchar	type ALCchar		13
+nim	ALCbyte	openal.html#ALCbyte	type ALCbyte		14
+nim	ALCubyte	openal.html#ALCubyte	type ALCubyte		15
+nim	ALCshort	openal.html#ALCshort	type ALCshort		16
+nim	ALCushort	openal.html#ALCushort	type ALCushort		17
+nim	ALCint	openal.html#ALCint	type ALCint		18
+nim	ALCuint	openal.html#ALCuint	type ALCuint		19
+nim	ALCsizei	openal.html#ALCsizei	type ALCsizei		20
+nim	ALCenum	openal.html#ALCenum	type ALCenum		21
+nim	ALCfloat	openal.html#ALCfloat	type ALCfloat		22
+nim	ALCdouble	openal.html#ALCdouble	type ALCdouble		23
+nim	ALCdevice	openal.html#ALCdevice	type ALCdevice		25
+nim	ALCcontext	openal.html#ALCcontext	type ALCcontext		26
+nim	ALC_FALSE	openal.html#ALC_FALSE	const ALC_FALSE		31
+nim	ALC_TRUE	openal.html#ALC_TRUE	const ALC_TRUE		34
+nim	ALC_FREQUENCY	openal.html#ALC_FREQUENCY	const ALC_FREQUENCY		37
+nim	ALC_REFRESH	openal.html#ALC_REFRESH	const ALC_REFRESH		40
+nim	ALC_SYNC	openal.html#ALC_SYNC	const ALC_SYNC		43
+nim	ALC_MONO_SOURCES	openal.html#ALC_MONO_SOURCES	const ALC_MONO_SOURCES		46
+nim	ALC_STEREO_SOURCES	openal.html#ALC_STEREO_SOURCES	const ALC_STEREO_SOURCES		49
+nim	ALC_NO_ERROR	openal.html#ALC_NO_ERROR	const ALC_NO_ERROR		54
+nim	ALC_INVALID_DEVICE	openal.html#ALC_INVALID_DEVICE	const ALC_INVALID_DEVICE		57
+nim	ALC_INVALID_CONTEXT	openal.html#ALC_INVALID_CONTEXT	const ALC_INVALID_CONTEXT		60
+nim	ALC_INVALID_ENUM	openal.html#ALC_INVALID_ENUM	const ALC_INVALID_ENUM		63
+nim	ALC_INVALID_VALUE	openal.html#ALC_INVALID_VALUE	const ALC_INVALID_VALUE		66
+nim	ALC_OUT_OF_MEMORY	openal.html#ALC_OUT_OF_MEMORY	const ALC_OUT_OF_MEMORY		69
+nim	ALC_ALL_DEVICES_SPECIFIER	openal.html#ALC_ALL_DEVICES_SPECIFIER	const ALC_ALL_DEVICES_SPECIFIER		72
+nim	ALC_DEFAULT_DEVICE_SPECIFIER	openal.html#ALC_DEFAULT_DEVICE_SPECIFIER	const ALC_DEFAULT_DEVICE_SPECIFIER		73
+nim	ALC_DEVICE_SPECIFIER	openal.html#ALC_DEVICE_SPECIFIER	const ALC_DEVICE_SPECIFIER		74
+nim	ALC_EXTENSIONS	openal.html#ALC_EXTENSIONS	const ALC_EXTENSIONS		75
+nim	ALC_MAJOR_VERSION	openal.html#ALC_MAJOR_VERSION	const ALC_MAJOR_VERSION		76
+nim	ALC_MINOR_VERSION	openal.html#ALC_MINOR_VERSION	const ALC_MINOR_VERSION		77
+nim	ALC_ATTRIBUTES_SIZE	openal.html#ALC_ATTRIBUTES_SIZE	const ALC_ATTRIBUTES_SIZE		78
+nim	ALC_ALL_ATTRIBUTES	openal.html#ALC_ALL_ATTRIBUTES	const ALC_ALL_ATTRIBUTES		79
+nim	ALC_CAPTURE_DEVICE_SPECIFIER	openal.html#ALC_CAPTURE_DEVICE_SPECIFIER	const ALC_CAPTURE_DEVICE_SPECIFIER		82
+nim	ALC_CAPTURE_DEFAULT_DEVICE_SPECIFIER	openal.html#ALC_CAPTURE_DEFAULT_DEVICE_SPECIFIER	const ALC_CAPTURE_DEFAULT_DEVICE_SPECIFIER		83
+nim	ALC_CAPTURE_SAMPLES	openal.html#ALC_CAPTURE_SAMPLES	const ALC_CAPTURE_SAMPLES		84
+nim	alcCreateContext	openal.html#alcCreateContext,ALCdevice,ptr.ALCint	proc alcCreateContext(device: ALCdevice; attrlist: ptr ALCint): ALCcontext		87
+nim	alcMakeContextCurrent	openal.html#alcMakeContextCurrent,ALCcontext	proc alcMakeContextCurrent(context: ALCcontext): bool		88
+nim	alcProcessContext	openal.html#alcProcessContext,ALCcontext	proc alcProcessContext(context: ALCcontext)		89
+nim	alcSuspendContext	openal.html#alcSuspendContext,ALCcontext	proc alcSuspendContext(context: ALCcontext)		90
+nim	alcDestroyContext	openal.html#alcDestroyContext,ALCcontext	proc alcDestroyContext(context: ALCcontext)		91
+nim	alcGetCurrentContext	openal.html#alcGetCurrentContext	proc alcGetCurrentContext(): ALCcontext		92
+nim	alcGetContextsDevice	openal.html#alcGetContextsDevice,ALCcontext	proc alcGetContextsDevice(context: ALCcontext): ALCdevice		93
+nim	alcOpenDevice	openal.html#alcOpenDevice,cstring	proc alcOpenDevice(devicename: cstring): ALCdevice		96
+nim	alcCloseDevice	openal.html#alcCloseDevice,ALCdevice	proc alcCloseDevice(device: ALCdevice): bool		97
+nim	alcGetError	openal.html#alcGetError,ALCdevice	proc alcGetError(device: ALCdevice): ALCenum		102
+nim	alcIsExtensionPresent	openal.html#alcIsExtensionPresent,ALCdevice,cstring	proc alcIsExtensionPresent(device: ALCdevice; extname: cstring): bool		107
+nim	alcGetProcAddress	openal.html#alcGetProcAddress,ALCdevice,cstring	proc alcGetProcAddress(device: ALCdevice; funcname: cstring): pointer		108
+nim	alcGetEnumValue	openal.html#alcGetEnumValue,ALCdevice,cstring	proc alcGetEnumValue(device: ALCdevice; enumname: cstring): ALCenum		109
+nim	alcGetString	openal.html#alcGetString,ALCdevice,ALCenum	proc alcGetString(device: ALCdevice; param: ALCenum): cstring		112
+nim	alcGetIntegerv	openal.html#alcGetIntegerv,ALCdevice,ALCenum,ALCsizei,ptr.ALCint	proc alcGetIntegerv(device: ALCdevice; param: ALCenum; size: ALCsizei;\n               data: ptr ALCint)		113
+nim	alcCaptureOpenDevice	openal.html#alcCaptureOpenDevice,cstring,ALCuint,ALCenum,ALCsizei	proc alcCaptureOpenDevice(devicename: cstring; frequency: ALCuint; format: ALCenum;\n                     buffersize: ALCsizei): ALCdevice		117
+nim	alcCaptureCloseDevice	openal.html#alcCaptureCloseDevice,ALCdevice	proc alcCaptureCloseDevice(device: ALCdevice): bool		119
+nim	alcCaptureStart	openal.html#alcCaptureStart,ALCdevice	proc alcCaptureStart(device: ALCdevice)		120
+nim	alcCaptureStop	openal.html#alcCaptureStop,ALCdevice	proc alcCaptureStop(device: ALCdevice)		121
+nim	alcCaptureSamples	openal.html#alcCaptureSamples,ALCdevice,pointer,ALCsizei	proc alcCaptureSamples(device: ALCdevice; buffer: pointer; samples: ALCsizei)		122
