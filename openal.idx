@@ -1,4 +1,4 @@
-nimTitle	openal	openal.html	module src/openal		0
+nimTitle	openal	openal.html	module openal		0
 nim	ALuint	openal.html#ALuint	type ALuint		3
 nim	ALint	openal.html#ALint	type ALint		4
 nim	ALsizei	openal.html#ALsizei	type ALsizei		5
